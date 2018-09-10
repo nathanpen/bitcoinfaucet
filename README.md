@@ -6,7 +6,7 @@ The wallet will need funds to pay for the transactions
 ##Setup
 - Change directory to app
 - Edit constants.js
-- Make sure to enter your <accessToken>, <passphrase>, <walletId> 
+- Make sure to enter your accessToken, passphrase, and walletId 
 
 ##How to run
 - Install Node.JS and NPM
