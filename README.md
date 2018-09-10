@@ -1,6 +1,6 @@
 # Bitcoin Faucet
 
-You will need a bitgo developer account with an active access token, passphrase, and walletId
+You will need a bitgo developer account with an active access token, passphrase, and walletId.
 The wallet will need funds to pay for the transactions
 
 ##Setup
