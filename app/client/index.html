@@ -1,0 +1,39 @@
+<html>
+<head>
+  <!--  <script src="libs/angular/angular.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body ng-app="bitcoinClient" ng-controller="clientCtrl">
+<div class="container main-container">
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3>The Most Awesomest Bitcoin Faucet Ever (Enter an Address to Receive Some)</h3>
+                </div>
+                <div class="panel-body">
+                    <form novalidate ng-submit="send()" name="theForm">
+                        <div class="input-group">
+                            <input type="text" class="form-control" ng-model="address" ng-minlength="2" required>
+                            <div class="input-group-btn">
+                                <button type="submit" class="btn btn-danger" ng-disabled="sending || !theForm.$valid">GIMME SOME!</button>
+                            </div>
+                        </div>
+                    </form>
+                    <span ng-if="success"><strong><span class="green">Success:</span> Your transaction Id is: {{successMessage}}</strong> </span>
+                    <span ng-if="error"><strong><span class="red">Error:</span> {{errorMessage}}</strong></span>
+                </div>
+                <div class="panel-footer">&copy; Awesome Technologies 2018</div>
+            </div>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+</div>
+</body>
+</html>
